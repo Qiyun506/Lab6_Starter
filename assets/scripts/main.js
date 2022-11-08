@@ -73,6 +73,7 @@ function initFormHandler() {
   //            submit button is clicked
   form.addEventListener('submit', (event) => {
     // B4. TODO - Create a new FormData object from the <form> element reference above
+    event.preventDefault();
     let fd = new FormData(form);
     // B5. TODO - Create an empty object (I'll refer to this object as recipeObject to
     //            make this easier to read), and then extract the keys and corresponding
